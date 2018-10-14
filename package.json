@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "clean": "rimraf ./dist",
-    "build:js": "babel ./src/js/main.js -o ./dist/js/bundle.js && browserify ./dist/js/bundle.js -o ./dist/js/bundle.js",
+    "build:js": "mkdir dist && cd dist && mkdir js && cd ../ & babel ./src/js/main.js -o ./dist/js/bundle.js && browserify ./dist/js/bundle.js -o ./dist/js/bundle.js",
     "build:ejs": "ejs-cli --base-dir src/ejs/pages '/**/**.ejs' --out ./dist --options src/data/**.json",
     "build:sass": "node-sass --include-path scss src/scss/style.scss --source-map true ./dist/css/style.css --output-style compressed",
     "build:images": "imagemin src/images/* -o dist/images",
