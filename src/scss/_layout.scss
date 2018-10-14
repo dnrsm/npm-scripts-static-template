@@ -1,0 +1,52 @@
+@import "vars";
+
+// ---------------------------
+// Common
+// ---------------------------
+
+html {
+  font-size: 10px;
+}
+
+body {
+  position: relative;
+  z-index: 0;
+  width: auto;
+  height: auto;
+  background: #fff;
+  color: #333;
+  font-size: 1.5rem;
+  line-height: 1.65;
+  letter-spacing: .5px;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    padding: 0 16px;
+  }
+}
+
+.sp {
+  @media screen and (min-width: 769px) {
+    display: none !important;
+  }
+}
+
+.pc {
+  @media screen and (max-width: 768px) {
+    display: none !important;
+  }
+}
+
+// ---------------------------
+// Header
+// ---------------------------
+
+// ---------------------------
+// Footer
+// ---------------------------

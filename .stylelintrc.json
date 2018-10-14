@@ -1,0 +1,19 @@
+{
+  "parser": ["scss"],
+  "extends": ["stylelint-config-standard", "./node_modules/prettier-stylelint/config.js"],
+  "ignoreFiles": ["./css/*.css"],
+  "rules": {
+    "indentation": 2,
+    "at-rule-no-unknown": [
+      true, {
+        "ignoreAtRules": ["function", "if", "each", "include", "mixin", "content", "else", "return"]
+      }
+    ],
+    "length-zero-no-unit": true,
+    "number-leading-zero": "never",
+    "color-hex-length": "short",
+    "shorthand-property-no-redundant-values": true,
+    "value-list-comma-newline-after": "never-multi-line",
+    "declaration-colon-newline-after": null
+  }
+}
