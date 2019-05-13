@@ -1,5 +1,13 @@
 # npm-scripts static template
 
+## Features
+|Features|Description|
+|------------------|-----------|
+|CSS| [SASS](http://sass-lang.com/),[PostCSS](https://postcss.org/)|
+|JS|[Vue.js](https://jp.vuejs.org/index.html),[TypeScript](https://www.typescriptlang.org/),[Webpack](https://webpack.js.org/), [Babel](http://babeljs.io/), [Prettier](https://prettier.io/)|
+|Testing|[Jest](https://jestjs.io/), [Puppeteer](https://pptr.dev/)|
+|Live Reload|[webpack-dev-server](https://www.npmjs.com/package/webpack-dev-server)|
+
 ## Installation
 ```bash
 $ npm i
@@ -9,9 +17,8 @@ $ backstop init
 
 ## Usage
 ```bash
-
-# rm -rf dist
-$ npm run clean
+# run postcss
+$ npm run postcss
 
 # build js
 $ npm run build:js
@@ -29,13 +36,22 @@ $ npm run build:images
 $ npm run build
 
 # format sass
-$ npm run format
+$ npm run format:css
 
-# develop server
-$ npm run serve
+# list js
+$ npm run lint
+
+# listfinx js
+$ npm run listfinx
 
 # dev
 $ npm run dev
+
+# e2e testing
+$ npm run test:e2e
+
+# unit testing
+$ npm run test:unit
 
 # create reference files
 $ reference:visual

@@ -4,21 +4,59 @@
     {
       "label": "phone",
       "width": 320,
-      "height": 2000
+      "height": 2400
     },
     {
       "label": "pc",
-      "width": 1280,
-      "height": 2000
+      "width": 1424,
+      "height": 2400
     }
   ],
   "onBeforeScript": "puppet/onBefore.js",
   "onReadyScript": "puppet/onReady.js",
   "scenarios": [
     {
-      "label": "Index",
+      "label": "TOP",
       "cookiePath": "backstop_data/engine_scripts/cookies.json",
-      "url": "http://localhost:3000/",
+      "url": "http://localhost:7777",
+      "referenceUrl": "",
+      "readyEvent": "",
+      "readySelector": "",
+      "delay": 0,
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "hoverSelector": "",
+      "clickSelector": "",
+      "postInteractionWait": 0,
+      "selectors": [],
+      "selectorExpansion": true,
+      "expect": 0,
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "PDP",
+      "cookiePath": "backstop_data/engine_scripts/cookies.json",
+      "url": "http://localhost:7777/item",
+      "referenceUrl": "",
+      "readyEvent": "",
+      "readySelector": "",
+      "delay": 0,
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "hoverSelector": "",
+      "clickSelector": "",
+      "postInteractionWait": 0,
+      "selectors": [],
+      "selectorExpansion": true,
+      "expect": 0,
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "PLP",
+      "cookiePath": "backstop_data/engine_scripts/cookies.json",
+      "url": "http://localhost:7777/itemList",
       "referenceUrl": "",
       "readyEvent": "",
       "readySelector": "",

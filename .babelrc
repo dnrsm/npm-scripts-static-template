@@ -1,10 +1,11 @@
 {
   "presets": [
-    ["env", {
-      "targets": {
-        "browsers": ["last 2 versions", "safari >= 7"],
-        "IE": "11"
+    [
+      "@babel/preset-env",
+      {
+        "useBuiltIns": "entry",
+        "exclude": ["transform-regenerator"]
       }
-    }]
+    ]
   ]
 }

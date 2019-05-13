@@ -1,4 +1,9 @@
-import jquery from 'jquery';
-window.$ = window.jQuery=jquery;
+import Vue from "vue"
+import Person from "./util/Person.ts"
+import Hello from "./components/Hello.vue"
 
-// ここから記述
+const person = new Person("nanashi")
+console.log(person.getName())
+
+Vue.component(Hello.name, Hello)
+new Vue({ el: "#root" })
